@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #ebebeb;
+    margin: 0.2rem;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+}
+
+/*=========CREATING ANIMATION==========*/
+@keyframes open {
+    0% {
+        transform: scale(0, 0);
+    }
+
+    25% {
+        transform: scale(0.5, 0.5);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/*========RESPONSIVE STYLING==========*/
+
+@media (max-width: 1600px) {
+    .header {
+        width: 80%;
+        left: 20%;
+    }
+
+    .side-bar {
+        display: block;
+        width: 20%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #profile {
+        display: block;
+    }
+
+    .main {
+        margin-top: 3%;
+        width: 80%;
+        left: 20%;
+    }
+
+    .row .col {
+        margin: 0.5rem;
+        width: 50%;
+    }
+    #profile--feed {
+        padding: 0.5rem 0.3rem;
+        margin: 0 0.5rem;
+    }
+    .write--post textarea {
+        width: 50%;
+    }
+    .write--post,
+    .post--area {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1400px) {
+    .header {
+        width: 80%;
+        left: 20%;
+    }
+
+    .side-bar {
+        display: block;
+        width: 20%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #profile {
+        display: block;
+    }
+
+    .main {
+        margin-top: 3%;
+        width: 80%;
+        left: 20%;
+    }
+
+    .row .col {
+        margin: 0.5rem;
+        width: 50%;
+    }
+    .main #short- {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        width: 70%;
+        left: 30%;
+    }
+
+    .side-bar {
+        display: block;
+        width: 30%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #profile {
+        display: block;
+    }
+
+    .main {
+        margin-top: 5%;
+        width: 70%;
+        left: 30%;
+    }
+
+    .row .col {
+        margin: 0.5rem 0.3rem;
+        width: 50%;
+    }
+    .main #short- {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .side-bar {
+        display: none;
+        width: 60%;
+        top: 3rem;
+    }
+
+    .header {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #profile {
+        display: none;
+    }
+
+    .main {
+        margin-top: 13%;
+        width: 100%;
+        left: 0;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row .col {
+        width: 100%;
+        margin: 0.5rem 0.8rem;
+    }
+    .main #short- {
+        width: 100%;
+    }
+    #profile--feed {
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+    .box .profile {
+        position: relative;
+        overflow: hidden;
+    }
+    .write--post textarea {
+        width: 80%;
+    }
+    .write--post,
+    .post--area {
+        width: 100%;
+    }
+    #profile--feed {
+        padding: 0 0;
+        margin: 0 0;
+    }
+}

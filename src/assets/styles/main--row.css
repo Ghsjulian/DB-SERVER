@@ -1,0 +1,249 @@
+::root {
+    --button: rgb(0, 130, 245);
+}
+
+.main--row {
+    /*
+    display: grid;
+    align-content: space-between;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+    padding: 0.5rem;
+    */
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    grid-gap: 0.8rem;
+}
+.main--row .box {
+    background: #fff;
+    padding: 0.7rem 0.4rem;
+    border-radius: 5px;
+}
+.main--row #news--feed {
+    overflow: auto;
+}
+.box .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+}
+#profile--feed {
+    overflow: auto;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 0.3rem;
+    margin: 0.5rem auto;
+    border-radius: 50%;
+    border-style: double;
+    border-width: 2px;
+    border-color: rgb(41, 236, 255);
+}
+.profile h3 {
+    color: rgb(91, 91, 91);
+    font-weight: 500px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0.3rem auto;
+}
+.profile .button--area {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    gap: 1.3rem;
+}
+.button--area button {
+    padding: 0.4rem 0.8rem;
+    margin: 0.5rem auto;
+    outline: none;
+    border-style: double;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(0, 130, 245);
+}
+.button--area button:hover {
+    outline: none;
+    transition: 0.2s ease-in;
+    background: rgb(0, 111, 150);
+}
+.profile--info {
+    border-top: 1px solid lightgray;
+    align-items: left;
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+.profile--info li {
+    align-items: left;
+    text-align: left;
+    margin: 0.7rem auto;
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+}
+.profile--info li span {
+    color: rgb(77, 77, 77);
+    text-align: center;
+    margin: 0 0.5rem;
+}
+/*----Profile Areq Finished----*/
+.box #post--head {
+    text-align: center;
+    margin: 0.5rem auto;
+    color: rgb(0, 145, 224);
+}
+.box .write--post {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.write--post img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0.5rem auto;
+}
+.write--post label {
+    background: rgb(0, 145, 224);
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem auto;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.write--post textarea {
+    outline: none;
+    border: 1px solid rgb(0, 145, 224);
+    border-radius: 10px;
+    padding: 0.5rem 0.8rem;
+    width: 80%;
+    margin: 0.5rem auto;
+    font-family: Sans-Serif;
+}
+.write--post .post--btn {
+    display: flex;
+    gap: 2.5rem;
+    padding: 0 0.4rem;
+    align-items: center;
+    justify-content: center;
+}
+.post--btn button {
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem auto;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(0, 130, 245);
+}
+
+.box .post--area {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.post--area .post-- {
+    border: 0.1px solid #808080;
+    border-radius: 5px;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.post-- .user-- {
+    margin-right: 0;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.user-- img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0.2rem;
+    border: 0.1px solid #1795ff;
+    margin: 0 0.5rem;
+}
+.user-- span {
+    color: #3d3d3d;
+    font-weight: 500;
+}
+.post-- .post-content {
+    text-align: left;
+    margin: 0 auto;
+    padding: 0.5rem;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.3rem;
+    font-weight: 500;
+    color: #3f3f3f;
+    text-transform: capitalize;
+}
+.post-- .button--area {
+    display: flex;
+    padding: 0 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.button--area button img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.post-- .button--area button {
+    background: transparent;
+    color: #000;
+}
+.post-- .comment--area {
+    display: flex;
+    padding: 0 0.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.comment--area input {
+    outline: none;
+    border: 1px solid #0070f0;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    margin: 0 0.3rem;
+    width: 90%;
+}
+.comment--area button {
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem auto;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #fff;
+}
+.comment--area button img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+@media (max-width: 992px) {
+    .main--row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 576px) {
+    .main--row {
+        grid-template-columns: 1fr;
+    }
+}

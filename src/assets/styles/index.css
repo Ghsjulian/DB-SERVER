@@ -1,0 +1,153 @@
+:root {
+    --bg: #ffffff;
+    --mainColor: rgb(0, 224, 255);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
+.side-bar {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: var(--bg);
+    padding: 0.5rem;
+    align-items: center;
+    z-index: 9999;
+    overflow: auto;
+}
+
+.side-bar h2 {
+    align-items: center;
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.side-bar li {
+    margin: 0.9rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar li a {
+    display: flex;
+    align-items: center;
+    color: #5a5a5a;
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    transition: 0.3s ease-out;
+}
+
+.side-bar li a:hover {
+    background: rgba(78, 239, 255, 0.188);
+}
+
+.side-bar li a img {
+    width: 28px;
+    height: 28px;
+    object-fit: fill;
+    margin: 0 0.7rem;
+}
+
+.header {
+    position: fixed;
+    background: var(--bg);
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3rem 0.1rem;
+    box-shadow: 0 -1px 3px rgba(241, 241, 241, 0.142);
+    z-index: 10000;
+    border-bottom: 0.1px solid gray;
+}
+
+.header span,
+a {
+    display: inline-flex;
+    padding: 3px;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.header span img {
+    width: 23px;
+    height: 23px;
+    object-fit: fill;
+}
+
+.header a img {
+    width: 25px;
+    height: 25px;
+    object-fit: fill;
+}
+
+.mobile-nav {
+    width: 60%;
+    display: block;
+    box-shadow: 2px 0.6px 7px rgba(200, 200, 200, 0.469);
+}
+
+/*   MAIN CONTAINER   */
+
+.main {
+    position: relative;
+    background: transparent;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    background: #fff;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.main h2 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: rgb(0, 178, 255);
+    font-size: 2rem;
+}
+
+.main #hero,
+.col #hero {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+    webkit-border-radius: 8px;
+    padding: 0.5rem;
+}
+.main #short- {
+    color: rgb(95, 95, 95);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.7rem;
+    margin: 0.5rem auto;
+}
